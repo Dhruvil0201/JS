@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Interest Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .calculator {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: aqua;
+            border: 1px solid #ec4e4e;
+            border-radius: 5px;
+        }
+        .principa, .rat , .year{
+            margin-bottom: 20px;
+            background-color: aliceblue;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid #040404;
+            border-radius: 5px;
+        }
+
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            background-color: aliceblue;
+            padding: 10px;
+            border: 1px solid #040404;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Simple Interest Calculator</h2>
+        <div class="principa" >Principal Amount:
+            <span id="principal"></span>
+        </div>
+
+        <div class="rat" >Rate of Interest (%):
+            <span id="rate"></span>
+        </div>
+        
+        <div class="year" >Number of Years:
+            <span id="years"></span>
+        </div>
+
+        <div id="result">
+            Interest Amount: <span id="interestAmount"></span> 
+            <br><br>
+            Total Amount: <span id="totalAmount"></span>
+            
+        </div>
+    </div>
+
+    <script>
+
+        var principal= 250000;
+        var rate = 25;
+        var years = 5;
+        var interestAmount= (principal*rate*years)/100;
+        var totalAmount = principal+interestAmount;
+
+
+        document.getElementById("principal").innerHTML =  principal +"rs";
+        document.getElementById("rate").innerHTML = rate +"%";
+        document.getElementById("years").innerHTML = years +"years";
+        document.getElementById("interestAmount").innerHTML = interestAmount +"rs";
+        document.getElementById("totalAmount").innerHTML = totalAmount +"rs";
+    </script>
+</body>
+</html>
