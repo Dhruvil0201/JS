@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:600');
+
+
+:root {
+  --main-color: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  --secondary-color: #741CAF;
+  --sans: "josefin sans", sans serif;
+}
+
+body {
+  background: #201C29;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  width: 400px;
+  height: 400px;
+  background: var(--main-color);
+  border-radius: 5px;
+  font-family: "dancing script", cursive;
+  overflow: hidden;
+  color: rgb(199, 207, 211);
+  letter-spacing: .5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+  visibility: hidden;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  background: #0404047d;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, .5);
+  font-size: 1.3rem;
+}
+
+
+.number::before {
+  content: "";
+  position: absolute;
+  top: -130px;
+  right: -30px;
+  width: 90px;
+  height: 180px;
+  background: var(--secondary-color);
+  transform: rotate(-45deg);
+  z-index: -1;
+  box-shadow: 0 0 .7rem rgba(0, 0, 0, .5);
+}
+
+.number {
+  font-family: var(--sans);
+  position: absolute;
+  margin: 0;
+  top: 15px;
+  right: 15px;
+  color: fade-out(#fff, .3);
+}
+
+.quote {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.credit {
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  font-family: var(--sans);
+  font-size: .8rem;
+  font-weight: 500;
+
+  &::before {
+    content: "⸛ ";
+    vertical-align: middle;
+    font-size: 1.4rem;
+  }
+}
+
+.fas {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 12%;
+  left: 7%;
+  color: rgba(100, 58, 122, .2);
+}
+
+input {
+  width: 100%;
+  transition: .3s;
+}
+
+
+.button p {
+  background: #802BBC;
+  text-align: center;
+  color: #fff;
+  padding: 1rem 0;
+  width: 100%;
+  font-family: var(--sans);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  transition: .2s ease-out;
+}
+
+.button p:hover {
+  background: var(--secondary-color);
+  cursor: pointer;
+}
+
+#card-1:checked~.container .inner-1,
+#card-2:checked~.container .inner-2,
+#card-3:checked~.container .inner-3,
+#card-4:checked~.container .inner-4,
+#card-5:checked~.container .inner-5,
+#card-6:checked~.container .inner-6,
+#card-7:checked~.container .inner-7,
+#card-8:checked~.container .inner-8,
+#card-9:checked~.container .inner-9,
+#card-10:checked~.container .inner-10,
+#card-11:checked~.container .inner-11,
+#card-12:checked~.container .inner-12,
+#card-13:checked~.container .inner-13,
+#card-14:checked~.container .inner-14,
+#card-15:checked~.container .inner-15,
+#card-16:checked~.container .inner-16,
+#card-17:checked~.container .inner-17,
+#card-18:checked~.container .inner-18,
+#card-19:checked~.container .inner-19,
+#card-20:checked~.container .inner-20,
+#card-21:checked~.container .inner-21,
+#card-22:checked~.container .inner-22,
+#card-23:checked~.container .inner-23,
+#card-24:checked~.container .inner-24,
+#card-25:checked~.container .inner-25 {
+  opacity: 1;
+  visibility: visible;
+}
+
+#card-1:checked~.container .inner-2,
+#card-2:checked~.container .inner-3,
+#card-3:checked~.container .inner-4,
+#card-4:checked~.container .inner-5,
+#card-5:checked~.container .inner-6,
+#card-6:checked~.container .inner-7,
+#card-7:checked~.container .inner-8,
+#card-8:checked~.container .inner-9,
+#card-9:checked~.container .inner-10,
+#card-10:checked~.container .inner-11,
+#card-11:checked~.container .inner-12,
+#card-12:checked~.container .inner-13,
+#card-13:checked~.container .inner-14,
+#card-14:checked~.container .inner-15,
+#card-15:checked~.container .inner-16,
+#card-16:checked~.container .inner-17,
+#card-17:checked~.container .inner-18,
+#card-18:checked~.container .inner-19,
+#card-19:checked~.container .inner-20,
+#card-20:checked~.container .inner-21,
+#card-21:checked~.container .inner-22,
+#card-22:checked~.container .inner-23,
+#card-23:checked~.container .inner-24,
+#card-24:checked~.container .inner-25 {
+
+  transform: scale(.85);
+  transform: scale(1) translate(-20rem);
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f3f4f6;
+      }
+
+      .card {
+        width: 300px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-left: ;
+        padding: 20px;
+      }
+
+      .picture {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .picture img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .details {
+        text-align: left;
+        color: #333333;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #333333;
+      }
+
+      .value {
+        color: #666666;
+      }
+
+      @media screen and (max-width: 768px) {
+        /* CSS rules for screens narrower than 768px */
+        .card {
+          width: 100%; /* Adjust the width of the card for smaller screens */
+          margin: 5px; /* Adjust the margin for smaller screens */
+        }
+      }
+
+      /* The rest of your existing CSS code here */
+    </style>
+
+    <title>Student ID Card</title>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="picture">
+        <img
+          id="student-picture"
+          src="https://via.placeholder.com/150"
+          alt="Student Picture"
+        />
+      </div>
+      <div class="details">
+        <div class="label">Name:</div>
+        <div class="value" id="student-name">John Doe</div>
+        <div class="label">Email:</div>
+        <div class="value" id="student-email">johndoe@example.com</div>
+        <div class="label">ID Number:</div>
+        <div class="value" id="student-id">123456</div>
+        <div class="label">Phone Number:</div>
+        <div class="value" id="student-phone">123-456-7890</div>
+        <div class="label">Course:</div>
+        <div class="value" id="student-course" style="color: #ff7f50">
+          Computer Science
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="picture">
+        <img
+          id="student-picture"
+          src="https://via.placeholder.com/150"
+          alt="Student Picture"
+        />
+      </div>
+      <div class="details">
+        <div class="label">Name:</div>
+        <div class="value" id="student-name">John Doe</div>
+        <div class="label">Email:</div>
+        <div class="value" id="student-email">johndoe@example.com</div>
+        <div class="label">ID Number:</div>
+        <div class="value" id="student-id">123456</div>
+        <div class="label">Phone Number:</div>
+        <div class="value" id="student-phone">123-456-7890</div>
+        <div class="label">Course:</div>
+        <div class="value" id="student-course" style="color: #ff7f50">
+          Computer Science
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="picture">
+        <img
+          id="student-picture"
+          src="https://via.placeholder.com/150"
+          alt="Student Picture"
+        />
+      </div>
+      <div class="details">
+        <div class="label">Name:</div>
+        <div class="value" id="student-name">John Doe</div>
+        <div class="label">Email:</div>
+        <div class="value" id="student-email">johndoe@example.com</div>
+        <div class="label">ID Number:</div>
+        <div class="value" id="student-id">123456</div>
+        <div class="label">Phone Number:</div>
+        <div class="value" id="student-phone">123-456-7890</div>
+        <div class="label">Course:</div>
+        <div class="value" id="student-course" style="color: #ff7f50">
+          Computer Science
+        </div>
+      </div>
+    </div>
+    <script>
+      // Replace these values with dynamic data from your system or user input
+      const studentData = {
+        picture: "https://via.placeholder.com/150",
+        name: "John Doe",
+        email: "johndoe@example.com",
+        id: "123456",
+        phone: "123-456-7890",
+        course: "Computer Science",
+      };
+
+      // Update the card with dynamic data
+      document.getElementById("student-picture").src = studentData.picture;
+      document.getElementById("student-name").innerText = studentData.name;
+      document.getElementById("student-email").innerText = studentData.email;
+      document.getElementById("student-id").innerText = studentData.id;
+      document.getElementById("student-phone").innerText = studentData.phone;
+      document.getElementById("student-course").innerText = studentData.course;
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

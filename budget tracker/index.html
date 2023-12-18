@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Budget & Wallet Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Budget & Wallet Tracker</h1>
+    <div class="balance">
+      <h2>Balance: <span id="balanceAmount">$0.00</span></h2>
+    </div>
+    <div class="transaction-form">
+      <input type="text" id="text" placeholder="Enter description">
+      <input type="number" id="amount" placeholder="Enter amount">
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button onclick="addTransaction()">Add Transaction</button>
+    </div>
+    <div class="transaction-list">
+      <h3>Transaction History</h3>
+      <ul id="transactions"></ul>
+    </div>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
