@@ -1,0 +1,42 @@
+.header-style{
+    height: 60px;
+    background-color: #E6E6E6;
+}
+.logo-img{
+    height: 70px;
+}
+.cart-style{
+    width: 40px;
+    height: 35px;
+    
+}
+
+.modal{
+    --bs-modal-width: 900px;
+}
+
+.cart-pro-lay{
+    margin-top: 25px;
+}
+.card-img-top{
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.pm{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+.btn2{
+    position: absolute;
+    top: 90%;
+    left:35%;
+
+}
+
+/* .bi-cart-check{
+    width: 50px;
+    height: 50px;
+} */
